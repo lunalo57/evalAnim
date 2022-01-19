@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: teal;
+}
+
+a {
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: yellowgreen;
+    margin-left: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin: 40px;
+}
+
+.container {
+    width: 100px;
+    height: 500px;
+    border: 2px dashed salmon;
+    margin: auto;
+    align-items: center;
+    position: relative;
+}
+
+#balloon {
+    width: 96px;
+    height: 96px;
+    border-radius: 100%;
+    background-color: yellowgreen;
+    background-image: url(../images/cute-cats.png);
+    background-size: cover;
+    position: absolute;
+    animation-name: rebond;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rebond {
+    0% {
+        top: 0;
+    }
+    10% {
+        top: 202px;
+    }
+    20% {
+        top: 404px;
+    }
+    30% {
+        top: 96px;
+    }
+    40% {
+        top: 404px;
+    }
+    50% {
+        top: 192px;
+    }
+    60% {
+        top: 404px;
+    }
+    70% {
+        top: 288px;
+    }
+    80% {
+        top: 404px;
+    }
+    90% {
+        top: 384px;
+    }
+    100% {
+        top: 404px;
+    }
+}

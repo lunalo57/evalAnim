@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: teal;
+}
+
+a {
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: yellowgreen;
+    margin-left: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin: 40px;
+}
+
+p {
+    text-align: center;
+    line-height: 50px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.container {
+    width: 600px;
+    height: 600px;
+    border: 2px dashed salmon;
+    margin: auto;
+    position: relative;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    background-color: yellowgreen;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transform: rotate(0deg);
+    animation-name: racing;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes racing {
+    0% {
+        background-color: yellowgreen;
+        top: 20px;
+        left: 20px;
+        transform: rotate(0deg);
+    }
+    25% {
+        background-color: red;
+        top: 20px;
+        left: 530px;
+        transform: rotate(360deg);
+    }
+    50% {
+        background-color: blue;
+        top: 530px;
+        left: 530px;
+        transform: rotate(720deg);
+    }
+    75% {
+        background-color: orange;
+        top: 530px;
+        left: 20px;
+        transform: rotate(1080deg);
+    }
+    100% {
+        background-color: yellowgreen;
+        top: 20px;
+        left: 20px;
+        transform: rotate(1440deg);
+    }
+}
+
+.container .box:only-of-type {
+    background-color: yellowgreen;
+}
+
+#box1 {
+    animation-delay: 0s;
+}
+
+#box2 {
+    animation-delay: 0.5s;
+}
+
+#box3 {
+    animation-delay: 1s;
+}
+
+#box4 {
+    animation-delay: 1.5s;
+}
+
+#box5 {
+    animation-delay: 2s;
+}
+
+#box6 {
+    animation-delay: 2.5s;
+}
+
+#box7 {
+    animation-delay: 3s;
+}
+
+#box8 {
+    animation-delay: 3.5s;
+}

@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: teal;
+}
+
+a {
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: yellowgreen;
+    margin-left: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin: 40px;
+}
+
+.container {
+    width: 200px;
+    height: 500px;
+    margin: auto;
+    border: 2px dashed salmon;
+}
+
+#menu {
+    height: 70px;
+    transition-property: height;
+    transition-duration: 2s;
+    transition-delay: 0.3s;
+    transition-timing-function: ease-out;
+    text-align: center;
+    margin: 10px auto;
+    padding-top: 15px;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: salmon;
+}
+
+#menu:hover {
+    height: 475px;
+}
